@@ -1,0 +1,96 @@
+
+package com.elsevier.obii.vo;
+
+import javax.xml.bind.annotation.XmlRegistry;
+
+
+/**
+ * This object contains factory methods for each 
+ * Java content interface and Java element interface 
+ * generated in the com.elsevier.obii.vo package. 
+ * <p>An ObjectFactory allows you to programatically 
+ * construct new instances of the Java representation 
+ * for XML content. The Java representation of XML 
+ * content can consist of schema derived interfaces 
+ * and classes representing the binding of schema 
+ * type definitions, element declarations and model 
+ * groups.  Factory methods for each of these are 
+ * provided in this class.
+ * 
+ */
+@XmlRegistry
+public class ObjectFactory {
+
+
+    /**
+     * Create a new ObjectFactory that can be used to create new instances of schema derived classes for package: com.elsevier.obii.vo
+     * 
+     */
+    public ObjectFactory() {
+    }
+
+    /**
+     * Create an instance of {@link IntegrationServiceResponse }
+     * 
+     */
+    public IntegrationServiceResponse createIntegrationServiceResponse() {
+        return new IntegrationServiceResponse();
+    }
+
+    /**
+     * Create an instance of {@link Alerts }
+     * 
+     */
+    public Alerts createAlerts() {
+        return new Alerts();
+    }
+
+    /**
+     * Create an instance of {@link Alert }
+     * 
+     */
+    public Alert createAlert() {
+        return new Alert();
+    }
+
+    /**
+     * Create an instance of {@link GenericVO }
+     * 
+     */
+    public GenericVO createGenericVO() {
+        return new GenericVO();
+    }
+
+    /**
+     * Create an instance of {@link UserVO }
+     * 
+     */
+    public UserVO createUserVO() {
+        return new UserVO();
+    }
+
+    /**
+     * Create an instance of {@link FileInfoVO }
+     * 
+     */
+    public FileInfoVO createFileInfoVO() {
+        return new FileInfoVO();
+    }
+
+    /**
+     * Create an instance of {@link NameValueMapVO }
+     * 
+     */
+    public NameValueMapVO createNameValueMapVO() {
+        return new NameValueMapVO();
+    }
+
+    /**
+     * Create an instance of {@link ArrayOfXsdNillableLong }
+     * 
+     */
+    public ArrayOfXsdNillableLong createArrayOfXsdNillableLong() {
+        return new ArrayOfXsdNillableLong();
+    }
+
+}

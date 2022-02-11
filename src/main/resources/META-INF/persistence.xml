@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?><persistence xmlns="http://java.sun.com/xml/ns/persistence" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.0" xsi:schemaLocation="http://java.sun.com/xml/ns/persistence http://java.sun.com/xml/ns/persistence/persistence_2_0.xsd">
+    <persistence-unit name="OBDEV1">
+        <provider>org.hibernate.jpa.HibernatePersistenceProvider</provider>
+        <properties>
+            <property name="hibernate.connection.driver_class" value="oracle.jdbc.driver.OracleDriver"/>
+            <property name="hibernate.connection.password" value="dev_obii_db_pass"/>
+            <property name="hibernate.connection.url" value="jdbc:oracle:thin:@d1appob.opsbank2-dev.tio.systems:1521:D1APPOB"/>
+            <property name="hibernate.connection.username" value="OBII"/>
+            <property name="hibernate.dialect" value="org.hibernate.dialect.Oracle10gDialect"/>
+            <property name="hibernate.temp.use_jdbc_metadata_defaults" value="false"/>
+        </properties>
+    </persistence-unit>
+    <persistence-unit name="OBSYS3">
+        <provider>org.hibernate.jpa.HibernatePersistenceProvider</provider>
+        <properties>
+            <property name="hibernate.connection.driver_class" value="oracle.jdbc.driver.OracleDriver"/>
+            <property name="hibernate.connection.password" value="test_obii_db_pass"/>
+            <property name="hibernate.connection.url" value="jdbc:oracle:thin:@sappob.opsbank2-test.tio.systems:1521:SAPPOB"/>
+            <property name="hibernate.connection.username" value="OBII"/>
+            <property name="hibernate.dialect" value="org.hibernate.dialect.Oracle10gDialect"/>
+            <property name="hibernate.temp.use_jdbc_metadata_defaults" value="false"/>
+        </properties>
+    </persistence-unit>
+    <persistence-unit name="WRINT">
+        <provider>org.hibernate.jpa.HibernatePersistenceProvider</provider>
+        <properties>
+            <property name="hibernate.connection.driver_class" value="oracle.jdbc.driver.OracleDriver"/>
+            <property name="hibernate.connection.password" value="int_obii_db_pass"/>
+            <property name="hibernate.connection.url" value="jdbc:oracle:thin:@iappob.opsbank2-int.tio.systems:1521:IAPPOB"/>
+            <property name="hibernate.connection.username" value="OBII"/>
+            <property name="hibernate.dialect" value="org.hibernate.dialect.Oracle10gDialect"/>
+            <property name="hibernate.temp.use_jdbc_metadata_defaults" value="false"/>
+        </properties>
+    </persistence-unit>
+    <persistence-unit name="TEST_ENGINE_POSTGRES_DB">
+        <provider>org.hibernate.jpa.HibernatePersistenceProvider</provider>
+        <properties>
+            <property name="hibernate.connection.driver_class" value="org.postgresql.Driver"/>
+            <property name="hibernate.connection.password" value="auto_test_db_pass"/>
+            <!-- <property name="hibernate.connection.password" value="qjklshkhdio9"/> -->
+            <property name="hibernate.connection.url" value="jdbc:postgresql://testengine.opsbank2-test.tio.systems:5432/ob2tedb"/>
+            <property name="hibernate.connection.username" value="auto_test"/>
+            <property name="hibernate.dialect" value="org.hibernate.dialect.PostgreSQL92Dialect"/>
+            <property name="hibernate.temp.use_jdbc_metadata_defaults" value="false"/>
+        </properties>
+    </persistence-unit>
+   
+    <persistence-unit name="OBUAT">
+        <provider>org.hibernate.jpa.HibernatePersistenceProvider</provider>
+        <properties>
+            <property name="hibernate.connection.driver_class" value="oracle.jdbc.driver.OracleDriver"/>
+            <property name="hibernate.connection.password" value="uat_obii_db_pass"/>
+            <property name="hibernate.connection.url" value="jdbc:oracle:thin:@aappob.opsbank2-uat.tio.systems:1521:AAPPOB"/>
+            <property name="hibernate.connection.username" value="OBII"/>
+            <property name="hibernate.default_schema" value="OBII"/>
+            <property name="hibernate.dialect" value="org.hibernate.dialect.Oracle10gDialect"/>
+            <property name="hibernate.temp.use_jdbc_metadata_defaults" value="false"/>
+        </properties>
+    </persistence-unit>
+</persistence>
