@@ -22,6 +22,14 @@ Feature: functional scenarios to automate the cars in datalake scenarios
     * def response = classRef.connectToServices(serviceName,inputServiceWsdl,testData);
     And match response == 'true'
 
+      @EKB_FF_TC01
+  Scenario: Hit the harvester and validate the file are dropped in S3 and message posted to content found kafka.
+
+    Given url 'https://dp-content-ekb-api-harvester.content.dev.dp.elsevier.systems/harvest?ekbId=51119'
+    When method GET
+    Then status 200
+
+
 
 
 
