@@ -17,7 +17,7 @@ public class ApiRunners {
     public void API1() throws Throwable {
         //loadProperties();
         System.out.println("enter class");
-        Results results  = Runner.path("classpath:FeatureFiles").tags("@SOAP_TC01_createOutputOrderProcess").parallel(1);
+        Results results  = Runner.path("classpath:FeatureFiles").tags("@EKB_FF_TC01").parallel(1);
         System.out.println("exit class");
         //Results results = Runner.parallel(getClass(),1);
         //generateReport();
